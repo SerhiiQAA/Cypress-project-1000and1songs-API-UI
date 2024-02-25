@@ -17,7 +17,6 @@ describe('News page', () => {
 
         // Buttons filter
         const buttonNames = ['Усі', 'Зустрічі', 'Лекції', 'Публікації', 'Майстер-класи', 'Концерти', 'Конференції'];
-
         buttonNames.forEach(buttonName => {
             cy.get('.news__filter').should('contain.text', buttonName);
         });
