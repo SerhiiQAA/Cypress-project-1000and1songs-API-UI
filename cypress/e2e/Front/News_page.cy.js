@@ -14,13 +14,11 @@ describe('News page', () => {
         cy.contains('.news', 'Новини').should('be.visible');
         // News_filter
         cy.get('.news__filter').should('be.visible')
-
         // Buttons filter
         const buttonNames = ['Усі', 'Зустрічі', 'Лекції', 'Публікації', 'Майстер-класи', 'Концерти', 'Конференції'];
         buttonNames.forEach(buttonName => {
             cy.get('.news__filter').should('contain.text', buttonName);
         });
-
         // News_card
         cy.get('.card__body')
             .find('.card__image-item, .card__title-name, .card__title-place')

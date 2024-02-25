@@ -9,7 +9,6 @@ describe('Main page', () => {
         cy.get('.footer').should('be.visible')
         // Home container  
         cy.get('.home').should('be.visible')
-
         cy.contains('.home', '1000 і 1 пісня').should('be.visible');
         cy.contains('.home', 'У нас зібрані українські традиційні пісні різних жанрів з усіх регіонів. Популяризуймо Україну разом').should('be.visible');
         cy.contains('.home', 'Підтримати проєкт').should('be.visible');
