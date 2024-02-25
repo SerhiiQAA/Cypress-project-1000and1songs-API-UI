@@ -1,8 +1,8 @@
-describe('About page', () => {
-    it('About page', () => {
+describe('Educational section', () => {
+    it('Educational section', () => {
         cy.viewport(1280, 1020)
         cy.visit('https://1000and1songs.com/#/')
-        cy.get(':nth-child(1) > .menu-list__item-link').click()
+        cy.get(':nth-child(2) > .menu-list__item-link').click()
         cy.location('protocol').should('eq', 'https:')
         cy.url().should('include', 'science')
         // Header
@@ -14,11 +14,13 @@ describe('About page', () => {
         cy.contains('.science', 'Освітній розділ').should('be.visible');
         //Carousel buttons
         cy.get('.card').should('be.visible')
-        cy.get('.card').to.have.length(6)
+        cy.get('.science__gallery')
+        .find('.card')
+        .should('have.length', 9);        
         // Recomendation
-        cy.get('.mat-expansion-panel mat-elevation-z0 recomendations ng-tns-c1859850774-2 ng-star-inserted').should('be.visible')
+        cy.get('#mat-expansion-panel-header-0').should('be.visible')
         .contains('Рекомендації')
-        cy.get('.mat-expansion-panel mat-elevation-z0 ng-tns-c1859850774-4 ng-star-inserted').should('be.visible')
+        cy.get('#mat-expansion-panel-header-1').should('be.visible')
         .contains('Рекомендовані джерела')
     });
 })
