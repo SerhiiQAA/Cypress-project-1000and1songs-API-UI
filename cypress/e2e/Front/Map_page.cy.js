@@ -12,14 +12,20 @@ describe('Map page', () => {
         //Map container  
         cy.get('.map').should('be.visible')
         cy.contains('.map', 'Фільтр').should('be.visible');
-        cy.get('.filter container').should('be.visible')
-        // Expeditions__categories
-        cy.get('.expeditions__gallery').should('be.visible')
-        
-        cy.get('.expeditions__gallery__item')
-        .find('.event')
-        .should('have.length', 12);        
-        // Pagination
-        cy.get('.pagination').should('be.visible')
+        cy.get('.filter__header').should('be.visible')
+        // Songs__container
+        cy.get('.songs').should('be.visible')
+        // Songs counter
+        cy.get('.songs__counter').contains('Кількість знайдених').should('be.visible')
+        // Player
+        cy.get('.songs__player').contains('Слухати всі знайдені пісні ').should('be.visible')
+        // Playlist
+        cy.get('.playlist__song__card').should('be.visible')
+        // Song_card
+        cy.get('.playlist__song__card').should('be.visible')
+        // Buttons_song_card
+        cy.get('.playlist__song__card')
+            .find('.song__card__img, .song__card__btn.btn-detail.ng-star-inserted, .listen__desktop')
+            .should('be.visible');
     });
 })
