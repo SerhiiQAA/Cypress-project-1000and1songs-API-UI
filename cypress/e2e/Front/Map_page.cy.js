@@ -13,6 +13,8 @@ describe('Map page', () => {
         cy.get('.map').should('be.visible')
         cy.contains('.map', 'Фільтр').should('be.visible');
         cy.get('.filter__header').should('be.visible')
+        // +/- map
+        cy.get('.gmnoprint').should('be.visible')
         // Songs__container
         cy.get('.songs').should('be.visible')
         // Songs counter
