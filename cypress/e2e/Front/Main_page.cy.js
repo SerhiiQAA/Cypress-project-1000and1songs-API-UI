@@ -2,6 +2,11 @@ describe('Main page', () => {
     it('Main page', () => {
         cy.viewport(1280, 1020)
         cy.visit('https://1000and1songs.com/#/')
+        cy.location('protocol').should('eq', 'https:')
+        // Header
+        cy.get('.header').should('be.visible')
+        // Footer
+        cy.get('.footer').should('be.visible')
         // Home container  
         cy.get('.home').should('be.visible')
 
