@@ -15,6 +15,13 @@ describe('Expeditions page', () => {
         // Expeditions__categories
         cy.get('.expeditions__gallery').should('be.visible')
         
+        // Expeditions filter
+        const buttonNames = ['Усі', 'Розвідка', 'Статичний', 'Міждисциплінарна', 'Тематична', 'Відеозапис обряду', 'Цифровий запис'];
+
+        buttonNames.forEach(buttonName => {
+            cy.get('.news__filter').should('contain.text', buttonName);
+        });
+
         cy.get('.expeditions__gallery__item')
         .find('.event')
         .should('have.length', 12);        
