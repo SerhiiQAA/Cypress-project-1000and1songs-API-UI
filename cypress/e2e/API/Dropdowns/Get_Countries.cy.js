@@ -6,7 +6,6 @@ describe('Get Countries', () => {
         response.body.forEach((partner) => {
             expect(partner).to.have.all.keys('id', "name", "song_count");
           });
-            // expect(response.body).to.have.length(2);
         })
       }) 
     })

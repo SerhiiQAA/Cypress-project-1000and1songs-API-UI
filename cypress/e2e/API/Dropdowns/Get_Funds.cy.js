@@ -3,8 +3,8 @@ describe('Get Funds', () => {
       cy.request('https://1000and1songs.com/api/v1/filter/song/funds').then(response => {
         expect(response).to.have.property('status',200)
         expect(response.body).to.not.be.null
-        response.body.forEach((partner) => {
-            expect(partner).to.have.all.keys('id', "name", "song_count");
+        response.body.forEach((funds) => {
+            expect(funds).to.have.all.keys('id', "name", "song_count");
           });
         })
       }) 
