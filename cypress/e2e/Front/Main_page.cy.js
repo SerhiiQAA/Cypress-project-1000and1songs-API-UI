@@ -23,7 +23,7 @@ describe('Main page', () => {
         cy.contains('.expeditions', 'Дивитись усі відео').should('be.visible');
         // News
         cy.get('.news').should('be.visible')
-        cy.contains('.news', 'Анонс').should('be.visible');
+        cy.contains('.news', 'Новини').should('be.visible');
         cy.contains('.news', 'Переглянути усі').should('be.visible');
     });
 })

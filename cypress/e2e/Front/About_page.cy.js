@@ -13,7 +13,7 @@ describe('About page', () => {
         cy.get('.about').should('be.visible')
         cy.contains('.about', 'Про нас').should('be.visible');
         //Carousel buttons
-        cy.get('.carousel-nav').should('be.visible')
+        cy.get('.slider__nav').should('be.visible')
         // Video youtube
         cy.get('.ql-video').should('be.visible')
         // Team

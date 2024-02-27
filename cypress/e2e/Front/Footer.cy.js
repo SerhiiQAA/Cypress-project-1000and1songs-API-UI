@@ -17,20 +17,19 @@ describe('Footer', () => {
         // Partners
         cy.contains('.footer', 'Наші партнери').should('be.visible');
 
-        cy.get('img[alt="Науково-дослідна лабораторія етномузикології НМАУ"]').should('be.visible')
-        cy.get('img[alt="Лабораторія музичної етнології ЛНМА"]').should('be.visible')
-        cy.get('img[alt="Baza Trainee Ukraine"]').should('be.visible')
+        cy.get(':nth-child(1) > a > .partners__logo').should('be.visible')
+        cy.get(':nth-child(2) > a > .partners__logo').should('be.visible')
+        cy.get(':nth-child(3) > a > .partners__logo').should('be.visible')
         // Documentation
         cy.contains('.footer', 'Звітність').should('be.visible');
         cy.contains('.footer', 'Політика приватності').should('be.visible');
         cy.contains('.footer', 'Правила та умови використання').should('be.visible');
-        cy.contains('.footer', 'Контакти').should('be.visible');
         // gmail
         cy.get('.contacts__email').should('be.visible')
         // social
         cy.get('a[href="https://www.facebook.com/groups/1000Songs/"]').should('be.visible')
         cy.get('a[href="https://www.youtube.com/@Olegmaestro"]').should('be.visible')
         // rules
-        cy.contains('.footer', 'Розробка BazaTraineeUkraine 2024. Всі права захищені').should('be.visible');
+        cy.contains('.footer', 'Розробка Baza Trainee Ukraine 2024 © Всі права захищені').should('be.visible');
     });
 })

@@ -4,7 +4,7 @@ describe('Educational section', () => {
         cy.visit('https://1000and1songs.com/#/')
         cy.get(':nth-child(2) > .menu-list__item-link').click()
         cy.location('protocol').should('eq', 'https:')
-        cy.url().should('include', 'science')
+        cy.url().should('include', 'education')
         // Header
         cy.get('.header').should('be.visible')
         // Footer
