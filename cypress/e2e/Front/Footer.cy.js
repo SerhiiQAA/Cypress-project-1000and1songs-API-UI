@@ -30,6 +30,6 @@ describe('Footer', () => {
         cy.get('a[href="https://www.facebook.com/groups/1000Songs/"]').should('be.visible')
         cy.get('a[href="https://www.youtube.com/@Olegmaestro"]').should('be.visible')
         // rules
-        cy.contains('.footer', 'Розробка Baza Trainee Ukraine 2024 © Всі права захищені').should('be.visible');
+        cy.contains('.footer', 'Team Baza Trainee Ukraine 2024 © Всі права захищені').should('be.visible');
     });
 })
