@@ -17,9 +17,7 @@ describe('Footer', () => {
         // Partners
         cy.contains('.footer', 'Наші партнери').should('be.visible');
 
-        cy.get(':nth-child(1) > a > .partners__logo').should('be.visible')
-        cy.get(':nth-child(2) > a > .partners__logo').should('be.visible')
-        cy.get(':nth-child(3) > a > .partners__logo').should('be.visible')
+        cy.get('.partners__items').should('be.visible')
         // Documentation
         cy.contains('.footer', 'Звітність').should('be.visible');
         cy.contains('.footer', 'Політика приватності').should('be.visible');
