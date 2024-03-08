@@ -4,7 +4,7 @@ describe('Get One News', () => {
   
       cy.request({
         method: 'GET',
-        url: `https://1000and1songs.com/api/v1/news/news/${itemId}`,
+        url: `https://1000and1songs.com/api/v1/news/${itemId}`,
         // Додайте інші параметри запиту, якщо потрібно
       }).then((response) => {
         expect(response).to.have.property('status', 200);
