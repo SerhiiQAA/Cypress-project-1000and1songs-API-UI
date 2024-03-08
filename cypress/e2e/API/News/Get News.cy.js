@@ -1,6 +1,6 @@
 describe('Get News', () => {
     it('Метод GET повинен повертати відповідь з обовязковими полями', () => {
-      cy.request('https://1000and1songs.com/api/v1/news/news').then((response) => {
+      cy.request('https://1000and1songs.com/api/v1/news').then((response) => {
         expect(response).to.have.property('status', 200);
         expect(response.body).to.not.be.null;
   

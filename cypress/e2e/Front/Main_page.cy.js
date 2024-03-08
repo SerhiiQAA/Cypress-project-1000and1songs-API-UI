@@ -19,8 +19,8 @@ describe('Main page', () => {
         cy.get('.map').should('be.visible')
         // Expeditions
         cy.get('.expeditions').should('be.visible')
-        cy.contains('.expeditions', 'Подивитись відео').should('be.visible');
-        cy.contains('.expeditions', 'Дивитись усі відео').should('be.visible');
+        cy.contains('.expeditions', 'Переглянути').should('be.visible');
+        cy.contains('.expeditions', 'Переглянути усі').should('be.visible');
         // News
         cy.get('.news').should('be.visible')
         cy.contains('.news', 'Новини').should('be.visible');
