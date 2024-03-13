@@ -1,6 +1,6 @@
 describe('Get Category', () => {
     it('Метод GET повинен повертати відповідь з обов\'язковими полями', () => {
-      const songId = 1; // Ваш ID для пошуку
+      const songId = 2; // Ваш ID для пошуку
   
       cy.request({
         method: 'GET',
