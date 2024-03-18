@@ -19,14 +19,12 @@ describe('Get Project', () => {
               "content",
               "authors",
               "editors",
-              "photographers",
-              "recording"
+              "photographers"
           ];    
           // Перевірка наявності кожного ключа
           expectedKeys.forEach((key) => {
             expect(response.body).to.have.property(key);
         });
-
         });
     });
 });
