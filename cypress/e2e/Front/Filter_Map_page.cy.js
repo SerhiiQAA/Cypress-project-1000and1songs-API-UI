@@ -10,7 +10,12 @@ describe('Support', () => {
         .click()
 // Open filter
         cy.get('.filter__body').should('be.visible')
-        .contains('Сховати фільтр')
+        .within(()=>{
+        cy.contains('Сховати фільтр')
+        cy.contains('Пошук')
+        cy.contains('Місцевість')
+        })
+   
 // Input data by song title
         cy.get('#mat-input-1').should('be.visible')
         .type('Зозуленька{enter}')
@@ -29,9 +34,9 @@ describe('Support', () => {
         .contains('Зозуленька')
 // Check the player
         cy.get('button[class="btn__player play ng-star-inserted"]').should('be.visible')
-        // .click()
-        // cy.wait(1000)
-        // cy.get('button[class="btn__player pause ng-star-inserted"]').should('be.visible')
-        // .click()
+        .click()
+        cy.wait(5000)
+        cy.get('button[class="btn__player pause ng-star-inserted"]').should('be.visible')
+        .click()
     });
 })
