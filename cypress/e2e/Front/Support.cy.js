@@ -14,12 +14,12 @@ describe('Support', () => {
         // Donation__actions
         cy.get('div.mat-mdc-dialog-actions:nth-child(1) > img:nth-child(1)').should('be.visible')
         cy.contains('QRкод (Приват24)').should('be.visible');
-        cy.get('button.donation__actions-button').should('be.visible')
-        .contains('Copy IBAN')
         cy.get('.donation__actions-options').should('be.visible')
-        .contains('Buy Me A Coffe ')
-        cy.get('.donation__actions-options').should('be.visible')
-        .contains('Patreon')        
+        .within(()=>{
+        cy.contains('Copy IBAN')
+        cy.contains('Buy Me A Coffe')
+        cy.contains('Patreon')   
+        })     
         // Close donation modal
         cy.get('.donation__close-btn').should('be.visible');
         cy.get('.donation__close-btn').click();

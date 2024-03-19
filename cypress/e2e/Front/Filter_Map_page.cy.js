@@ -14,8 +14,7 @@ describe('Support', () => {
         cy.contains('Сховати фільтр')
         cy.contains('Пошук')
         cy.contains('Місцевість')
-        })
-   
+        })   
 // Input data by song title
         cy.get('#mat-input-1').should('be.visible')
         .type('Зозуленька{enter}')
