@@ -37,5 +37,7 @@ describe('Support', () => {
         cy.wait(5000)
         cy.get('button[class="btn__player pause ng-star-inserted"]').should('be.visible')
         .click()
+        cy.get('button[class="btn__player pause ng-star-inserted"]').should('not.exist')
+        cy.get('button[class="btn__player play ng-star-inserted"]').should('exist')
     });
 })
