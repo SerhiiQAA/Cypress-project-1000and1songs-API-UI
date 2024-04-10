@@ -1,5 +1,5 @@
-describe('Support', () => {
-    it('Support', () => {
+describe('Filter map', () => {
+    it('Filter', () => {
         cy.viewport(1280, 1020)
         cy.visit('https://1000and1songs.com/#/')
         cy.get(':nth-child(4) > .menu-list__item-link').click()

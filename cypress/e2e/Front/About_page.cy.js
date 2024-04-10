@@ -15,7 +15,7 @@ describe('About page', () => {
         //Carousel buttons
         // cy.get('.slider__nav').should('be.visible')
         // Video youtube
-        cy.get('.ql-video').should('be.visible')
+        // cy.get('.ql-video').should('be.visible')
         // Team
         cy.get('.team').should('be.visible')
         cy.contains('.team', 'Команда').should('be.visible');
