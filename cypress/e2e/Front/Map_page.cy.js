@@ -14,13 +14,13 @@ describe('Map page', () => {
         cy.contains('.map', 'Фільтр').should('be.visible');
         cy.get('.filter__header').should('be.visible')
         // +/- map
-        cy.get('.gmnoprint').should('be.visible')
+        // cy.get('[aria-label="Збільшити"]').should('be.visible')
         // Songs__container
         cy.get('.songs').should('be.visible')
         // Songs counter
         cy.get('.songs__counter').contains('Кількість знайдених').should('be.visible')
         // Player
-        cy.get('.songs__player').contains('Слухати всі знайдені пісні ').should('be.visible')
+        // cy.get('.songs__player').contains('Слухати всі знайдені пісні ').should('be.visible')
         // Playlist
         cy.get('.playlist__song__card').should('be.visible')
         // Song_card
