@@ -1,7 +1,7 @@
 describe('Support', () => {
     it('Support', () => {
         cy.viewport(1280, 1020)
-        cy.visit('https://1000and1songs.com/#/')
+        cy.visit('/')
         cy.get('.actions__donate').click()
         cy.location('protocol').should('eq', 'https:')        
         cy.get('.donation').should('be.visible')

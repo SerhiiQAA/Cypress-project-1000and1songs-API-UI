@@ -1,7 +1,7 @@
 describe('Footer', () => {
     it('Footer', () => {
         cy.viewport(1280, 1020)
-        cy.visit('https://1000and1songs.com/#/')
+        cy.visit('/')
         // Footer
         cy.get('.footer').should('be.visible')
         // Logo    

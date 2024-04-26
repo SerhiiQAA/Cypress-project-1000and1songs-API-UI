@@ -1,7 +1,7 @@
 describe('Educational section', () => {
     it('Educational section', () => {
         cy.viewport(1280, 1020)
-        cy.visit('https://1000and1songs.com/#/')
+        cy.visit('/')
         cy.get(':nth-child(2) > .menu-list__item-link').click()
         cy.location('protocol').should('eq', 'https:')
         cy.url().should('include', 'education')

@@ -1,7 +1,7 @@
 describe('Header', () => {
     it('Header', () => {
         cy.viewport(1280, 1020)
-        cy.visit('https://1000and1songs.com/#/')
+        cy.visit('/')
         // Header
         cy.get('header[class="header"]').should('be.visible')
         // Logo    
