@@ -1,8 +1,8 @@
-export class MainPage {
+class MainPage {
     navigate() {
         cy.visit('https://1000and1songs.com/#/');
     }
-    validateProtocolHttps() {
+    validateHttps() {
         cy.location('protocol').should('eq', 'https:');
     }
     validateHeader() {
@@ -35,3 +35,4 @@ export class MainPage {
         cy.contains('.news', 'Переглянути усі').should('be.visible');
     }
 }
+export default MainPage;
