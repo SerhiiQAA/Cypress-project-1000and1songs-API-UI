@@ -1,26 +1,19 @@
-// import MainPage from "../pages/MainPage.js";
-// describe('Main page_Page object', () => {
-//     it('Main page validation', () => {
-//         cy.viewport(1280, 1020)
-//         cy.visit('/');
-//         const Test= new MainPage();
-//         Test.validationHttps();
-//         Test.validateHeader();
-//         Test.validateFooter();
-//         Test.validateHomeContainer();
-//         Test.validateRunningString();
-//         Test.validateExpeditionBlock();
-//         Test.validateNewsBlock()
-//     });
-// })
+import MainPage from "../pages/MainPage.js";
+describe('Main page_Page object', () => {
+    it('Main page validation', () => {
+        cy.viewport(1280, 1020)
+        cy.visit('/');
+        const Test= new MainPage();
+        Test.validateHttps();
+        Test.validateHeader();
+        Test.validateFooter();
+        Test.validateHomeContainer();
+        Test.validateRunningString();
+        Test.validateExpeditionBlock();
+        Test.validateNewsBlock()
+    });
 
-    
-
-
-
-
-describe('Main page', () => {
-    it('Main page', () => {
+    it('gMain page', () => {
         cy.viewport(1280, 1020)
         cy.visit('/')
         cy.location('protocol').should('eq', 'https:')
@@ -47,4 +40,16 @@ describe('Main page', () => {
         cy.contains('.news', 'Новини').should('be.visible');
         cy.contains('.news', 'Переглянути усі').should('be.visible');
     });
+
+
+
 })
+
+    
+
+
+
+
+// describe('Main page', () => {
+
+// })
