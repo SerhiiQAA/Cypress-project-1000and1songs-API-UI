@@ -3,7 +3,7 @@ describe('Header', () => {
 
     it('Header', () => {
 
-        await cy.pixeleyeSnapshot({
+        cy.pixeleyeSnapshot({
             name: "landing-header",
           });
 
