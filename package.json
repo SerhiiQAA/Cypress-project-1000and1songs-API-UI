@@ -12,6 +12,8 @@
     "cypress": "^13.6.6"
   },
   "devDependencies": {
-    "cypress-mochawesome-reporter": "^3.8.2"
+    "@pixeleye/cypress": "^0.6.5",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "pixeleye": "^0.8.7"
   }
 }

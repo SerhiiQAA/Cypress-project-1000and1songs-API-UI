@@ -1,6 +1,12 @@
 import HeaderP from "../pages/HeaderContainer.js";
 describe('Header', () => {
+
     it('Header', () => {
+
+        await cy.pixeleyeSnapshot({
+            name: "landing-header",
+          });
+
         cy.viewport(1280, 1020)
         cy.visit('/')
 
@@ -10,6 +16,6 @@ describe('Header', () => {
         Header.validateLogo();
         Header.validateHeaderBtn();
         Header.validateSearchField();
-        Header.validateDonateBtn();
+        Header.validateDonateBtn(); 
     });
 })
