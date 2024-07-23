@@ -7,8 +7,10 @@ describe('Header', () => {
             name: "landing-header",
           });
 
-        cy.viewport(1280, 1020)
-        cy.visit('/')
+        cy.viewport(1280, 1020);
+        cy.visit('/');
+        cy.injectAxe();
+        cy.checkA11y();
 
         const Header = new HeaderP();
         

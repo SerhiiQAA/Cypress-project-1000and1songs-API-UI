@@ -1,9 +1,9 @@
 class FooterP {
     validateFooterContainer() {
-        cy.get('.footer').should('be.visible')
+        cy.get('.footer').should('be.visible');
     }
     validateLogo() {
-        cy.get('.footer__logo').should('be.visible')
+        cy.get('.footer__logo').should('be.visible');
     }
     validateFooterBtn() {
         cy.contains('.footer', 'Про проєкт').should('be.visible');
@@ -13,7 +13,7 @@ class FooterP {
         cy.contains('.footer', 'Новини').should('be.visible');
     }
     validateDonateBtn() {
-        cy.get('.footer__donate').should('be.visible')
+        cy.get('.footer__donate').should('be.visible');
     }
     validatePartnersSection() {
         cy.contains('.footer', 'Наші партнери').should('be.visible');
@@ -24,10 +24,10 @@ class FooterP {
         cy.contains('.footer', 'Правила та умови використання').should('be.visible');
     }
     validateGmail() {
-        cy.get('.contacts__email').should('be.visible')
+        cy.get('.contacts__email').should('be.visible');
     }
     validateSocialSection() {
-        cy.get('.footer__donate').should('be.visible')
+        cy.get('.footer__donate').should('be.visible');
     }
     validateRulesSection() {
         cy.contains('.footer', 'Team Baza Trainee Ukraine 2024 © Всі права захищені').should('be.visible');

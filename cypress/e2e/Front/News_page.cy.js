@@ -2,18 +2,20 @@ import NewsP from "../pages/NewsPage";
 
 describe('News page', () => {
     it('News page', () => {
-        cy.viewport(1280, 1020)
-        cy.visit('/')
+        cy.viewport(1280, 1020);
+        cy.visit('/');
+        cy.injectAxe();
+        cy.checkA11y();
 
-        const News = new NewsP()
+        const News = new NewsP();
 
-        News.validateNewsBtn()
-        News.validateHeaderContainer()
-        News.validateFooterContainer()
-        News.validateNewsContainer()
-        News.validateNewsFilter()
-        News.validateBtnFilter()
-        News.validateNewsCard()
-        News.validateCardsCount()
+        News.validateNewsBtn();
+        News.validateHeaderContainer();
+        News.validateFooterContainer();
+        News.validateNewsContainer();
+        News.validateNewsFilter();
+        News.validateBtnFilter();
+        News.validateNewsCard();
+        News.validateCardsCount();
     });
 })

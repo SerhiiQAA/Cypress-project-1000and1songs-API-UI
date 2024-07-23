@@ -21,3 +21,5 @@ import 'cypress-mochawesome-reporter/register';
 // require('./commands')
 
 import "@pixeleye/cypress";
+
+import 'cypress-axe'

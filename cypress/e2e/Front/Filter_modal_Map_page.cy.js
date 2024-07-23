@@ -2,13 +2,15 @@ import FilterM from "../pages/FilterModal.js";
 
 describe('Filter map', () => {
     it('Filter', () => {
-        cy.viewport(1280, 1020)
-        cy.visit('/')
+        cy.viewport(1280, 1020);
+        cy.visit('/');
+        cy.injectAxe();
+        cy.checkA11y();
 
         const Filter = new FilterM();
 
-        Filter.validateFilterBtn()
-        Filter.validateFilterContainer()
-        Filter.validateInputData()    
+        Filter.validateFilterBtn();
+        Filter.validateFilterContainer();
+        Filter.validateInputData()  ;  
     });
 })

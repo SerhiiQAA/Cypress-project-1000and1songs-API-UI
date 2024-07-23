@@ -2,8 +2,10 @@ import MainPage from "../pages/MainPage.js";
 
 describe('Main page_Page object', () => {
     it('Main page validation', () => {
-        cy.viewport(1280, 1020)
+        cy.viewport(1280, 1020);
         cy.visit('/');
+        cy.injectAxe();
+        cy.checkA11y();
 
         const Main = new MainPage();
 
@@ -13,6 +15,6 @@ describe('Main page_Page object', () => {
         Main.validateHomeContainer();
         Main.validateRunningString();
         Main.validateExpeditionBlock();
-        Main.validateNewsBlock()
+        Main.validateNewsBlock();
     });
 })
