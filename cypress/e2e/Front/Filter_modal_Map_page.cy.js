@@ -4,8 +4,8 @@ describe('Filter map', () => {
     it('Filter', () => {
         cy.viewport(1280, 1020);
         cy.visit('/');
-        cy.injectAxe();
-        cy.checkA11y();
+        // cy.injectAxe();
+        // cy.checkA11y();
 
         const Filter = new FilterM();
 

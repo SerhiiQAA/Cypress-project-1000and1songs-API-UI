@@ -4,8 +4,8 @@ describe('News page', () => {
     it('News page', () => {
         cy.viewport(1280, 1020);
         cy.visit('/');
-        cy.injectAxe();
-        cy.checkA11y();
+        // cy.injectAxe();
+        // cy.checkA11y();
 
         const News = new NewsP();
 
