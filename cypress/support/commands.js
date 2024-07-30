@@ -23,3 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+addMatchImageSnapshotCommand({
+    e2eSpecDir: 'cypress/e2e/', // the default value
+  });

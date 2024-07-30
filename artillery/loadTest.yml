@@ -1,0 +1,11 @@
+config:
+  target: "https://1000and1songs.com/#/"
+  phases:
+    - duration: 10
+      arrivalRate: 2000
+      name: Artillery First Test
+scenarios:
+  - name: Getting a resource
+    flow:
+      - get:
+          url: "{{ target }}get"
