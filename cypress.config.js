@@ -13,7 +13,7 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
-      ddMatchImageSnapshotPlugin(on);
+      addMatchImageSnapshotPlugin(on);
       // implement node event listeners here
     },
     baseUrl : ('https://1000and1songs.com/#/')

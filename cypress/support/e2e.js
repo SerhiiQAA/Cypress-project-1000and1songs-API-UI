@@ -23,3 +23,4 @@ import 'cypress-mochawesome-reporter/register';
 import "@pixeleye/cypress";
 
 import 'cypress-axe'
+
