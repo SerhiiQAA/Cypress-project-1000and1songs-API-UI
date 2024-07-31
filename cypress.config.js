@@ -16,6 +16,6 @@ module.exports = defineConfig({
       addMatchImageSnapshotPlugin(on);
       // implement node event listeners here
     },
-    baseUrl : ('https://1000and1songs.com/#/')
+    baseUrl : ('https://1000and1songs.com/')
   },
 });
