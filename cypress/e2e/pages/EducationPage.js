@@ -1,5 +1,5 @@
 class EducationP {
-    validateEducationBtn(){
+    validateEducationBtn() {
         cy.get(':nth-child(2) > .menu-list__item-link').click();
         cy.location('protocol').should('eq', 'https:');
         cy.url().should('include', 'education');
@@ -18,7 +18,7 @@ class EducationP {
         cy.get('.card').should('be.visible');
         cy.get('.science__gallery');
         .find('.card');
-        .should('have.length', 9); 
+        .should('have.length', 9);
     }
     validateRecomendation() {
         cy.get('#mat-expansion-panel-header-0').should('be.visible');
