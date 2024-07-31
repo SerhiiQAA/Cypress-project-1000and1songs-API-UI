@@ -14,6 +14,7 @@
     "cypress-axe": "^1.5.0"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@pixeleye/cypress": "^0.6.5",
     "@simonsmith/cypress-image-snapshot": "^9.1.0",
     "cypress-mochawesome-reporter": "^3.8.2",
