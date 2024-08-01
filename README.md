@@ -1,12 +1,13 @@
 ## Automated checking of all available application pages. The basis for this is filling the pages with elements according to the Figma layouts.
 ### I automated the API part according to the requests specified in the Swagger documentation. I checked for the presence of appropriate keys in the response body.
 
-#### Autotesting: =>{top-right;reveal=next}
+#### Autotesting: =>
+{left;reveal=next}
 * API 
 * functional
 * visual
 * regression
-* load
+=>{left;reveal=next} * load
 
 ### Added reporting for convenience (new)
 
