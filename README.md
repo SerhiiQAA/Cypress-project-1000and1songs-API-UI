@@ -8,6 +8,6 @@
 * regression
 * load
 
-#### Added reporting for convenience (new)
+#### Added reporting for convenience
 
 
