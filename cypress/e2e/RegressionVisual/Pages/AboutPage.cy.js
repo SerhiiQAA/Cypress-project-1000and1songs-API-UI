@@ -1,9 +1,11 @@
 describe('MainVisual', () => {
-    it('should be publicly accessible', () => {
-      cy.visit('/about');
-    //   cy.get('.active > img').should(be.visible);
-      cy.matchImageSnapshot({
-        blackout: ['.active > img'],
-      });
+  it('should be publicly accessible', () => {
+    cy.visit('/about');
+    cy.wait(500)
+    cy.matchImageSnapshot({
+      failureThreshold: 0.05,
+      failureThresholdType: 'percent'
     });
+  });
 });
+

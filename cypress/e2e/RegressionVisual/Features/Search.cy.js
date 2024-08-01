@@ -1,8 +1,10 @@
 describe('MainVisual', () => {
     it('should be publicly accessible', () => {
       cy.visit('/');
-      cy.get('.search').matchImageSnapshot({
-        // blackout: ['.footer__rules > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1)'],
+      cy.get('.search-img').click({ force: true })
+      cy.get('#mat-input-0').should('be.visible')
+      .then(() => {
+        cy.get('#mat-input-0').matchImageSnapshot();
       });
     });
 });

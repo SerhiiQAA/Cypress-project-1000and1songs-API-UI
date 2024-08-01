@@ -1,8 +1,9 @@
 describe('MainVisual', () => {
     it('should be publicly accessible', () => {
       cy.visit('/');
-      cy.get('.footer').matchImageSnapshot({
-        blackout: ['.footer__rules > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1)'],
+      cy.get('.footer').should('be.visible')
+      .then(() => {
+        cy.get('.footer').matchImageSnapshot();
       });
     });
 });
