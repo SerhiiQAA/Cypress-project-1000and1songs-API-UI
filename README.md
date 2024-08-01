@@ -5,8 +5,7 @@
 * OOP
 * API 
 * functional
-* visual
-* regression
+* regression UX
 * load
 
 #### Added reporting for convenience
