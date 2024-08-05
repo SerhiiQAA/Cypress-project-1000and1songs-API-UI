@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-05T10:30:15.160Z",
+    "end": "2024-08-05T10:30:15.352Z",
+    "duration": 192,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7e6c2325-2e3c-457f-b357-5a2b75050745",
+      "title": "",
+      "fullFile": "cypress/e2e/API/Projects/Get All Projects.cy.js",
+      "file": "cypress/e2e/API/Projects/Get All Projects.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1b58d5d3-4b9b-406f-aef2-dc0608da542b",
+          "title": "Get All Projects",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "method get response code should be  200",
+              "fullTitle": "Get All Projects method get response code should be  200",
+              "timedOut": null,
+              "duration": 160,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('https://1000and1songs.com/api/v1/projects').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  expect(response.status).to.eq(200);\n  expect(response.body).to.have.property('items').that.is.a('array');\n  // expect(response.body.items).to.have.property('id').that.is.a('number');\n  // expect(response.body.items).to.have.property('title').that.is.a('string');\n  // expect(response.body.items).to.have.property('short_description').that.is.a('string');\n  // expect(response.body.items).to.have.property('preview_photo').that.is.a('string');\n  expect(response.body).to.have.property('total').that.is.a('number');\n  expect(response.body).to.have.property('page').that.is.a('number');\n  expect(response.body).to.have.property('size').that.is.a('number');\n  expect(response.body).to.have.property('pages').that.is.an('number');\n});",
+              "err": {},
+              "uuid": "aa647b47-108a-4c04-8b1e-84396d8e490c",
+              "parentUUID": "1b58d5d3-4b9b-406f-aef2-dc0608da542b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "aa647b47-108a-4c04-8b1e-84396d8e490c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 160,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-05T10:32:25.923Z",
+    "end": "2024-08-05T10:32:59.381Z",
+    "duration": 33458,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cf109c95-26d0-460c-b7ff-4dbaf35dc4b4",
+      "title": "",
+      "fullFile": "cypress/e2e/RegressionVisual/Pages/MapPage.cy.js",
+      "file": "cypress/e2e/RegressionVisual/Pages/MapPage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bf676b78-0218-44ab-a1d6-2557a32de711",
+          "title": "MainVisual",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should be publicly accessible",
+              "fullTitle": "MainVisual should be publicly accessible",
+              "timedOut": null,
+              "duration": 25021,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/map');\ncy.wait(500);\ncy.matchImageSnapshot({\n  failureThreshold: 0.05,\n  failureThresholdType: 'percent'\n});",
+              "err": {},
+              "uuid": "392ce0bc-0586-4529-a611-2659b15ebfc8",
+              "parentUUID": "bf676b78-0218-44ab-a1d6-2557a32de711",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "392ce0bc-0586-4529-a611-2659b15ebfc8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 25021,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

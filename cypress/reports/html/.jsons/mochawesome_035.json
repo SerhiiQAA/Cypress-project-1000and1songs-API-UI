@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-08-05T10:31:04.263Z",
+    "end": "2024-08-05T10:31:08.685Z",
+    "duration": 4422,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f7c2df45-b128-4492-9041-d6d4451b5eaf",
+      "title": "",
+      "fullFile": "cypress/e2e/RegressionVisual/Features/Map.cy.js",
+      "file": "cypress/e2e/RegressionVisual/Features/Map.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c333fd09-4309-4d79-a81d-86ea9ea08c32",
+          "title": "MainVisual",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should be publicly accessible",
+              "fullTitle": "MainVisual should be publicly accessible",
+              "timedOut": null,
+              "duration": 4203,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('.map-container').scrollIntoView().wait(1000).should('be.visible').then(() => {\n  cy.get('.map-container').matchImageSnapshot({\n    failureThreshold: 0.05,\n    failureThresholdType: 'percent'\n  });\n});",
+              "err": {
+                "message": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'HTMLDivElement'\n    |     property '__e3_' -> object with constructor 'Object'\n    |     property 'scroll' -> object with constructor 'Object'\n    |     property '87' -> object with constructor '_.zk'\n    --- property 'instance' closes the circle",
+                "estack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'HTMLDivElement'\n    |     property '__e3_' -> object with constructor 'Object'\n    |     property 'scroll' -> object with constructor 'Object'\n    |     property '87' -> object with constructor '_.zk'\n    --- property 'instance' closes the circle\n    at JSON.stringify (<anonymous>)\n    at eval (webpack://1001_songs_cypress/./node_modules/allure-cypress/dist/cjs/index.js:1:15033)\n    at $Cypress.eval (webpack://1001_songs_cypress/./node_modules/allure-cypress/dist/cjs/index.js:1:15033)",
+                "diff": null
+              },
+              "uuid": "748ce996-8ee3-4ab3-b35f-77a8754bfe2d",
+              "parentUUID": "c333fd09-4309-4d79-a81d-86ea9ea08c32",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "748ce996-8ee3-4ab3-b35f-77a8754bfe2d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4203,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

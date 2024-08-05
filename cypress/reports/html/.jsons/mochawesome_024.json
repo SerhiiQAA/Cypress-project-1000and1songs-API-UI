@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-08-05T10:29:58.573Z",
+    "end": "2024-08-05T10:29:58.960Z",
+    "duration": 387,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a5395919-3700-4121-be56-7d608dc2ecce",
+      "title": "",
+      "fullFile": "cypress/e2e/API/Map/Filter_Song_Geotags.cy.js",
+      "file": "cypress/e2e/API/Map/Filter_Song_Geotags.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2b326192-582b-41d3-ab89-3b1d6ff1ad58",
+          "title": "Get Filter Song Geotags",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "method get response code should be  200",
+              "fullTitle": "Get Filter Song Geotags method get response code should be  200",
+              "timedOut": null,
+              "duration": 332,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('https://1000and1songs.com/api/v1/map/filter/geotag').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  response.body.forEach(geotag => {\n    expect(geotag).to.have.all.keys('id', 'city', 'latitude', \"longitude\", \"song_count\");\n  });\n});",
+              "err": {
+                "message": "AssertionError: expected { Object (id, city, ...) } to have keys 'id', 'city', 'latitude', 'longitude', and 'song_count'",
+                "estack": "AssertionError: expected { Object (id, city, ...) } to have keys 'id', 'city', 'latitude', 'longitude', and 'song_count'\n    at eval (webpack://1001_songs_cypress/./cypress/e2e/API/Map/Filter_Song_Geotags.cy.js:7:39)\n    at Context.eval (webpack://1001_songs_cypress/./cypress/e2e/API/Map/Filter_Song_Geotags.cy.js:6:22)",
+                "diff": "- [ 'city', 'id', 'latitude', 'longitude', 'photo', 'song_count' ]\n+ [ 'city', 'id', 'latitude', 'longitude', 'song_count' ]\n"
+              },
+              "uuid": "17af20b0-577c-4f0a-b892-ac8dc1b0708c",
+              "parentUUID": "2b326192-582b-41d3-ab89-3b1d6ff1ad58",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "17af20b0-577c-4f0a-b892-ac8dc1b0708c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 332,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

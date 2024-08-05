@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-08-05T10:27:36.561Z",
+    "end": "2024-08-05T10:28:08.148Z",
+    "duration": 31587,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "13e84a7c-b044-41e5-a49f-045492735def",
+      "title": "",
+      "fullFile": "cypress/e2e/Front/Filter_modal_Map_page.cy.js",
+      "file": "cypress/e2e/Front/Filter_modal_Map_page.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1533bc68-def1-4be2-93da-6476ed3cf486",
+          "title": "Filter map",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Filter",
+              "fullTitle": "Filter map Filter",
+              "timedOut": null,
+              "duration": 22246,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(1280, 1020);\ncy.visit('/map');\n// cy.injectAxe();\n// cy.checkA11y();\nconst Filter = new _FilterModal.default();\nFilter.validateFilterBtn();\nFilter.validateFilterContainer();\nFilter.validateInputData();",
+              "err": {
+                "message": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'HTMLDocument'\n    |     property '__e3_' -> object with constructor 'Object'\n    |     property 'keydown' -> object with constructor 'Object'\n    |     property '1' -> object with constructor '_.zk'\n    --- property 'instance' closes the circle",
+                "estack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'HTMLDocument'\n    |     property '__e3_' -> object with constructor 'Object'\n    |     property 'keydown' -> object with constructor 'Object'\n    |     property '1' -> object with constructor '_.zk'\n    --- property 'instance' closes the circle\n    at JSON.stringify (<anonymous>)\n    at eval (webpack://1001_songs_cypress/./node_modules/allure-cypress/dist/cjs/index.js:1:15033)\n    at $Cypress.eval (webpack://1001_songs_cypress/./node_modules/allure-cypress/dist/cjs/index.js:1:15033)",
+                "diff": null
+              },
+              "uuid": "35f64e83-a12a-404b-8079-fa0259f6d9c6",
+              "parentUUID": "1533bc68-def1-4be2-93da-6476ed3cf486",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "35f64e83-a12a-404b-8079-fa0259f6d9c6"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 22246,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

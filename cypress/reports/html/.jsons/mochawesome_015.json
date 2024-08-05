@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-05T10:29:33.956Z",
+    "end": "2024-08-05T10:29:34.165Z",
+    "duration": 209,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4d0172ba-0635-41fd-8d33-6b242e15b0c9",
+      "title": "",
+      "fullFile": "cypress/e2e/API/Dropdowns/Get_Regions.cy.js",
+      "file": "cypress/e2e/API/Dropdowns/Get_Regions.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "20306ab2-42af-4362-82a9-65b9ed610263",
+          "title": "Get Regions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "method get response code should be  200",
+              "fullTitle": "Get Regions method get response code should be  200",
+              "timedOut": null,
+              "duration": 174,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('https://1000and1songs.com/api/v1/filter/location/regions').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  response.body.forEach(partner => {\n    expect(partner).to.have.all.keys('id', \"name\", \"song_count\", \"country_id\");\n  });\n});",
+              "err": {},
+              "uuid": "733db371-cb59-4590-a7b3-e0a24629160d",
+              "parentUUID": "20306ab2-42af-4362-82a9-65b9ed610263",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "733db371-cb59-4590-a7b3-e0a24629160d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 174,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

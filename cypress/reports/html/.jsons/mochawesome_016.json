@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-05T10:29:36.690Z",
+    "end": "2024-08-05T10:29:36.898Z",
+    "duration": 208,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a7b9048e-d730-4026-9e29-e1ba7962a17d",
+      "title": "",
+      "fullFile": "cypress/e2e/API/Education/Get Category.cy.js",
+      "file": "cypress/e2e/API/Education/Get Category.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "38ea5d3e-44f5-4f53-a41c-1a48193a0311",
+          "title": "Get Category",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Метод GET повинен повертати відповідь з обов'язковими полями",
+              "fullTitle": "Get Category Метод GET повинен повертати відповідь з обов'язковими полями",
+              "timedOut": null,
+              "duration": 173,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const songId = 2; // Ваш ID для пошуку\ncy.request({\n  method: 'GET',\n  url: `https://1000and1songs.com/api/v1/education/category/${songId}`\n  // Додайте інші параметри запиту, якщо потрібно\n}).then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n});",
+              "err": {},
+              "uuid": "ef9a9aa2-0c09-40b0-9dc7-1d4e8ac6ecf7",
+              "parentUUID": "38ea5d3e-44f5-4f53-a41c-1a48193a0311",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ef9a9aa2-0c09-40b0-9dc7-1d4e8ac6ecf7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 173,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

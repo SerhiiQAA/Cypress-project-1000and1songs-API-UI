@@ -24,3 +24,4 @@ import "@pixeleye/cypress";
 
 import 'cypress-axe'
 
+import "allure-cypress";
