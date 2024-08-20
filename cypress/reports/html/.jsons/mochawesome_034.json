@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2024-08-05T10:30:58.245Z",
-    "end": "2024-08-05T10:31:02.008Z",
-    "duration": 3763,
+    "start": "2024-08-20T09:46:11.885Z",
+    "end": "2024-08-20T09:46:15.323Z",
+    "duration": 3438,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "91648640-e889-4350-88ba-b8d1501ec3e7",
+      "uuid": "e8edc2d2-3dba-4b63-9419-6b9282a755bf",
       "title": "",
       "fullFile": "cypress/e2e/RegressionVisual/Features/Header.cy.js",
       "file": "cypress/e2e/RegressionVisual/Features/Header.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a8c6d28d-a5cf-4fb6-a564-de097902eb7c",
+          "uuid": "6ef90708-f3e5-4999-af88-f2a6052e3dfd",
           "title": "MainVisual",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "should be publicly accessible",
               "fullTitle": "MainVisual should be publicly accessible",
               "timedOut": null,
-              "duration": 3556,
+              "duration": 3217,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -47,12 +47,12 @@
               "context": null,
               "code": "cy.visit('/');\ncy.get('.nav').matchImageSnapshot({});",
               "err": {
-                "message": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'HTMLDocument'\n    |     property '__e3_' -> object with constructor 'Object'\n    |     property 'keydown' -> object with constructor 'Object'\n    |     property '1' -> object with constructor '_.zk'\n    --- property 'instance' closes the circle",
-                "estack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'HTMLDocument'\n    |     property '__e3_' -> object with constructor 'Object'\n    |     property 'keydown' -> object with constructor 'Object'\n    |     property '1' -> object with constructor '_.zk'\n    --- property 'instance' closes the circle\n    at JSON.stringify (<anonymous>)\n    at eval (webpack://1001_songs_cypress/./node_modules/allure-cypress/dist/cjs/index.js:1:15033)\n    at $Cypress.eval (webpack://1001_songs_cypress/./node_modules/allure-cypress/dist/cjs/index.js:1:15033)",
+                "message": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'HTMLDocument'\n    |     property '__e3_' -> object with constructor 'Object'\n    |     property 'keydown' -> object with constructor 'Object'\n    |     property '1' -> object with constructor '_.Ck'\n    --- property 'instance' closes the circle",
+                "estack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'HTMLDocument'\n    |     property '__e3_' -> object with constructor 'Object'\n    |     property 'keydown' -> object with constructor 'Object'\n    |     property '1' -> object with constructor '_.Ck'\n    --- property 'instance' closes the circle\n    at JSON.stringify (<anonymous>)\n    at eval (webpack://1001_songs_cypress/./node_modules/allure-cypress/dist/cjs/index.js:1:15033)\n    at $Cypress.eval (webpack://1001_songs_cypress/./node_modules/allure-cypress/dist/cjs/index.js:1:15033)",
                 "diff": null
               },
-              "uuid": "fcc7c5fa-327a-4859-a4d8-1b73410aaedd",
-              "parentUUID": "a8c6d28d-a5cf-4fb6-a564-de097902eb7c",
+              "uuid": "f01b7960-29f2-464b-95fd-28d81fd3461d",
+              "parentUUID": "6ef90708-f3e5-4999-af88-f2a6052e3dfd",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "fcc7c5fa-327a-4859-a4d8-1b73410aaedd"
+            "f01b7960-29f2-464b-95fd-28d81fd3461d"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 3556,
+          "duration": 3217,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

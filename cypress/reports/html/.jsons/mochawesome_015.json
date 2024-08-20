@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-08-05T10:29:33.956Z",
-    "end": "2024-08-05T10:29:34.165Z",
-    "duration": 209,
+    "start": "2024-08-20T09:44:48.708Z",
+    "end": "2024-08-20T09:44:48.885Z",
+    "duration": 177,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4d0172ba-0635-41fd-8d33-6b242e15b0c9",
+      "uuid": "207d30a2-ffae-4584-bb63-99bc5abed346",
       "title": "",
       "fullFile": "cypress/e2e/API/Dropdowns/Get_Regions.cy.js",
       "file": "cypress/e2e/API/Dropdowns/Get_Regions.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "20306ab2-42af-4362-82a9-65b9ed610263",
+          "uuid": "e94d54dd-ca41-481d-87b0-94804355be29",
           "title": "Get Regions",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "method get response code should be  200",
               "fullTitle": "Get Regions method get response code should be  200",
               "timedOut": null,
-              "duration": 174,
+              "duration": 144,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.request('https://1000and1songs.com/api/v1/filter/location/regions').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  response.body.forEach(partner => {\n    expect(partner).to.have.all.keys('id', \"name\", \"song_count\", \"country_id\");\n  });\n});",
               "err": {},
-              "uuid": "733db371-cb59-4590-a7b3-e0a24629160d",
-              "parentUUID": "20306ab2-42af-4362-82a9-65b9ed610263",
+              "uuid": "c544ff0a-d6ee-4b13-8354-29089bc344cd",
+              "parentUUID": "e94d54dd-ca41-481d-87b0-94804355be29",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "733db371-cb59-4590-a7b3-e0a24629160d"
+            "c544ff0a-d6ee-4b13-8354-29089bc344cd"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 174,
+          "duration": 144,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

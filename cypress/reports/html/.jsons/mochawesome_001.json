@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-08-05T10:27:07.756Z",
-    "end": "2024-08-05T10:27:07.949Z",
-    "duration": 193,
+    "start": "2024-08-20T09:42:42.519Z",
+    "end": "2024-08-20T09:42:42.679Z",
+    "duration": 160,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "45fc3728-b686-4064-bfb4-8f6d7a86b98f",
+      "uuid": "d97f57b9-4a29-421e-b071-21808358665d",
       "title": "",
       "fullFile": "cypress/e2e/API/Get_Footer.cy.js",
       "file": "cypress/e2e/API/Get_Footer.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b0d9bcd2-d05d-4edc-a619-5b4d70d32199",
+          "uuid": "15dae315-f58c-474e-a76b-b74512646fc8",
           "title": "Get Footer",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "method get response code should be  200",
               "fullTitle": "Get Footer method get response code should be  200",
               "timedOut": null,
-              "duration": 163,
+              "duration": 128,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.request('https://1000and1songs.com/api/v1/footer').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  expect(response.body).to.have.property('reporting');\n  const expectedKeys = ['reporting', 'privacy_policy', 'rules_and_terms', 'email', 'facebook_url', 'youtube_url'];\n  // Перевірка наявності кожного ключа\n  expectedKeys.forEach(key => {\n    expect(response.body).to.have.property(key);\n  });\n});",
               "err": {},
-              "uuid": "f2b480cb-f31b-4297-b1a5-03dda950454e",
-              "parentUUID": "b0d9bcd2-d05d-4edc-a619-5b4d70d32199",
+              "uuid": "adff07f6-3403-4617-bd00-bd55c8a20bc5",
+              "parentUUID": "15dae315-f58c-474e-a76b-b74512646fc8",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f2b480cb-f31b-4297-b1a5-03dda950454e"
+            "adff07f6-3403-4617-bd00-bd55c8a20bc5"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 163,
+          "duration": 128,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

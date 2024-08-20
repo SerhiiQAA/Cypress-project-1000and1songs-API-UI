@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-08-05T10:30:06.923Z",
-    "end": "2024-08-05T10:30:07.109Z",
-    "duration": 186,
+    "start": "2024-08-20T09:45:21.320Z",
+    "end": "2024-08-20T09:45:21.476Z",
+    "duration": 156,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8e93f5c3-604c-4b92-9000-41b5ee281072",
+      "uuid": "61500d60-0c6b-498f-a6b1-115f02e2eba8",
       "title": "",
       "fullFile": "cypress/e2e/API/News/Get Categories.cy.js",
       "file": "cypress/e2e/API/News/Get Categories.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "bc661635-3562-4e07-ba3d-6d2a6b4b3f6c",
+          "uuid": "f13d9852-29bd-4609-a8bb-1b8def63c2c7",
           "title": "Get Categories",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Метод GET повинен повертати відповідь з обов'язковими полями",
               "fullTitle": "Get Categories Метод GET повинен повертати відповідь з обов'язковими полями",
               "timedOut": null,
-              "duration": 153,
+              "duration": 123,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.request('https://1000and1songs.com/api/v1/news/categories').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  // Перевірка наявності обов'язкових ключів в кожному об'єкті масиву\n  response.body.forEach(category => {\n    expect(category).to.have.all.keys('id', 'name');\n  });\n});",
               "err": {},
-              "uuid": "66e9943f-3052-46ad-a38d-2d88adea29da",
-              "parentUUID": "bc661635-3562-4e07-ba3d-6d2a6b4b3f6c",
+              "uuid": "40779fda-d811-4fe5-857f-4b57a1c0d25f",
+              "parentUUID": "f13d9852-29bd-4609-a8bb-1b8def63c2c7",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "66e9943f-3052-46ad-a38d-2d88adea29da"
+            "40779fda-d811-4fe5-857f-4b57a1c0d25f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 153,
+          "duration": 123,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

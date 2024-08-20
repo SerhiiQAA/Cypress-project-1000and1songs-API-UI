@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-08-05T10:32:07.934Z",
-    "end": "2024-08-05T10:32:12.495Z",
-    "duration": 4561,
+    "start": "2024-08-20T09:47:25.667Z",
+    "end": "2024-08-20T09:47:31.098Z",
+    "duration": 5431,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "09b77c6d-7861-4edc-a22d-4dfecb64dd88",
+      "uuid": "07cad618-da9c-46d6-90e7-3a54410a0530",
       "title": "",
       "fullFile": "cypress/e2e/RegressionVisual/Pages/ExpeditionsPage.cy.js",
       "file": "cypress/e2e/RegressionVisual/Pages/ExpeditionsPage.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "267d2d6f-0674-4692-820d-9e1b3f6a4cb4",
+          "uuid": "f4479b8e-7960-440b-886f-42dbdd870013",
           "title": "MainVisual",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "should be publicly accessible",
               "fullTitle": "MainVisual should be publicly accessible",
               "timedOut": null,
-              "duration": 4515,
+              "duration": 5381,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit('/expeditions');\ncy.wait(500);\ncy.matchImageSnapshot({\n  failureThreshold: 0.05,\n  failureThresholdType: 'percent'\n});",
               "err": {},
-              "uuid": "5becce48-8aed-428f-a70f-57e2788c6852",
-              "parentUUID": "267d2d6f-0674-4692-820d-9e1b3f6a4cb4",
+              "uuid": "7299882e-d6d7-41ff-b085-6836030cf3af",
+              "parentUUID": "f4479b8e-7960-440b-886f-42dbdd870013",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5becce48-8aed-428f-a70f-57e2788c6852"
+            "7299882e-d6d7-41ff-b085-6836030cf3af"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4515,
+          "duration": 5381,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

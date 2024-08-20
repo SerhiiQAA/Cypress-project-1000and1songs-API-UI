@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-08-05T10:32:14.594Z",
-    "end": "2024-08-05T10:32:23.593Z",
-    "duration": 8999,
+    "start": "2024-08-20T09:47:33.175Z",
+    "end": "2024-08-20T09:47:42.000Z",
+    "duration": 8825,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "91109f5b-e42f-4526-8276-a4dae59b0be0",
+      "uuid": "28a2dd04-cc9a-48ba-8054-5d71a16722ff",
       "title": "",
       "fullFile": "cypress/e2e/RegressionVisual/Pages/MainPage.cy.js",
       "file": "cypress/e2e/RegressionVisual/Pages/MainPage.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8bd1765c-168b-4de1-9bb2-eba8c0773e5b",
+          "uuid": "9e42cf4e-28c0-4e13-8a94-a8a0b56f38c2",
           "title": "MainVisual",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "should be publicly accessible",
               "fullTitle": "MainVisual should be publicly accessible",
               "timedOut": null,
-              "duration": 8870,
+              "duration": 8699,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('/');\ncy.get('.map-container').scrollIntoView().wait(700).should('be.visible').then(() => {\n  cy.matchImageSnapshot({\n    failureThreshold: 0.05,\n    failureThresholdType: 'percent'\n  });\n});",
               "err": {},
-              "uuid": "326f1272-ed44-4648-91d0-630a13158933",
-              "parentUUID": "8bd1765c-168b-4de1-9bb2-eba8c0773e5b",
+              "uuid": "8fc56193-4c24-453f-a174-6f47e1f35f85",
+              "parentUUID": "9e42cf4e-28c0-4e13-8a94-a8a0b56f38c2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "326f1272-ed44-4648-91d0-630a13158933"
+            "8fc56193-4c24-453f-a174-6f47e1f35f85"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8870,
+          "duration": 8699,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

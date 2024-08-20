@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-08-05T10:30:09.622Z",
-    "end": "2024-08-05T10:30:09.828Z",
-    "duration": 206,
+    "start": "2024-08-20T09:45:24.267Z",
+    "end": "2024-08-20T09:45:24.430Z",
+    "duration": 163,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "aa581cb7-3253-4913-af27-ad3e8c9adadf",
+      "uuid": "9f0c5054-6c38-42c4-892b-8f2f883c14e1",
       "title": "",
       "fullFile": "cypress/e2e/API/News/Get News.cy.js",
       "file": "cypress/e2e/API/News/Get News.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0cb55e75-f9c7-4ac6-bdf9-2550963a172c",
+          "uuid": "ef847ea4-ca7c-4473-ae88-dff33e7571b9",
           "title": "Get News",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Метод GET повинен повертати відповідь з обовязковими полями",
               "fullTitle": "Get News Метод GET повинен повертати відповідь з обовязковими полями",
               "timedOut": null,
-              "duration": 174,
+              "duration": 132,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.request('https://1000and1songs.com/api/v1/news').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  // Перевірка наявності обов'язкових ключів в кожному об'єкті масиву\n  response.body.items.forEach(category => {\n    expect(category).to.have.all.keys('id', 'title', 'short_description', 'preview_photo', 'created_at', 'category', 'location');\n  });\n});",
               "err": {},
-              "uuid": "ea85801c-a61a-42af-9b7c-cd45316063c4",
-              "parentUUID": "0cb55e75-f9c7-4ac6-bdf9-2550963a172c",
+              "uuid": "cbb01492-22e1-44c1-ae37-9b44dd52245a",
+              "parentUUID": "ef847ea4-ca7c-4473-ae88-dff33e7571b9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ea85801c-a61a-42af-9b7c-cd45316063c4"
+            "cbb01492-22e1-44c1-ae37-9b44dd52245a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 174,
+          "duration": 132,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
