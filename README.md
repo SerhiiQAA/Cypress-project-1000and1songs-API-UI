@@ -1,12 +1,6 @@
 ### 1000 and 1 song
 We have collected Ukrainian traditional songs of various genres from all regions. Let's popularize Ukraine together
 
-<video width="320" height="240" controls autoplay loop>
-  <source src="images/newVideo.gif" type="video/gif">
-  Ваш браузер не підтримує відео-елемент.
-</video>
-
-
 ![Alt text](images/main.png)
 
 ![Alt text](images/songs.png)
