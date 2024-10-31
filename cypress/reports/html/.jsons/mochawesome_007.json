@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-08-20T09:43:27.592Z",
-    "end": "2024-08-20T09:43:35.661Z",
-    "duration": 8069,
+    "start": "2024-10-05T11:33:58.936Z",
+    "end": "2024-10-05T11:34:09.407Z",
+    "duration": 10471,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "27fc0328-ccd2-4024-8640-a8688092ecd5",
+      "uuid": "330ec6f9-0632-4f7f-b15a-6367c1fadcb7",
       "title": "",
       "fullFile": "cypress/e2e/Front/Footer.cy.js",
       "file": "cypress/e2e/Front/Footer.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "281dd0a4-b6e8-4160-bab8-b669d64a02da",
+          "uuid": "586c9d11-8942-430a-9636-000e59da5a04",
           "title": "Footer",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Footer",
               "fullTitle": "Footer Footer",
               "timedOut": null,
-              "duration": 5747,
+              "duration": 8197,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.viewport(1280, 1020);\ncy.visit('/');\n// cy.injectAxe();\n// cy.checkA11y();\nconst Footer = new _FooterContainer.default();\nFooter.validateFooterContainer();\nFooter.validateLogo();\nFooter.validateFooterBtn();\nFooter.validateDonateBtn();\nFooter.validatePartnersSection();\nFooter.validateDocumentation();\nFooter.validateGmail();\nFooter.validateSocialSection();\nFooter.validateRulesSection();",
               "err": {},
-              "uuid": "2b602166-5c73-4ef7-ba5f-f591c11b5f21",
-              "parentUUID": "281dd0a4-b6e8-4160-bab8-b669d64a02da",
+              "uuid": "aea230da-650b-4765-8c05-58b309fd5ec2",
+              "parentUUID": "586c9d11-8942-430a-9636-000e59da5a04",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2b602166-5c73-4ef7-ba5f-f591c11b5f21"
+            "aea230da-650b-4765-8c05-58b309fd5ec2"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5747,
+          "duration": 8197,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

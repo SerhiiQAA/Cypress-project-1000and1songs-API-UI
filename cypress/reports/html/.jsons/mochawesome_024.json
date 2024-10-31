@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2024-08-20T09:45:13.157Z",
-    "end": "2024-08-20T09:45:13.464Z",
-    "duration": 307,
+    "start": "2024-10-05T11:35:47.391Z",
+    "end": "2024-10-05T11:35:47.685Z",
+    "duration": 294,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b1845a56-c7a5-4b50-b09b-22107cae508a",
+      "uuid": "68831133-79aa-4fb7-b45e-be2341762b10",
       "title": "",
       "fullFile": "cypress/e2e/API/Map/Filter_Song_Geotags.cy.js",
       "file": "cypress/e2e/API/Map/Filter_Song_Geotags.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "fd0223aa-af1a-4f8c-9085-4eb457152130",
+          "uuid": "a13ba214-dfd9-4b76-b9d1-e35ec626a44a",
           "title": "Get Filter Song Geotags",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "method get response code should be  200",
               "fullTitle": "Get Filter Song Geotags method get response code should be  200",
               "timedOut": null,
-              "duration": 252,
+              "duration": 241,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "AssertionError: expected { Object (id, city, ...) } to have keys 'id', 'city', 'latitude', 'longitude', and 'song_count'\n    at eval (webpack://1001_songs_cypress/./cypress/e2e/API/Map/Filter_Song_Geotags.cy.js:7:39)\n    at Context.eval (webpack://1001_songs_cypress/./cypress/e2e/API/Map/Filter_Song_Geotags.cy.js:6:22)",
                 "diff": "- [ 'city', 'id', 'latitude', 'longitude', 'photo', 'song_count' ]\n+ [ 'city', 'id', 'latitude', 'longitude', 'song_count' ]\n"
               },
-              "uuid": "b0228786-0842-45ab-9528-dba05fdcd9a4",
-              "parentUUID": "fd0223aa-af1a-4f8c-9085-4eb457152130",
+              "uuid": "6da15ec6-e33e-475d-9700-267d7558ca81",
+              "parentUUID": "a13ba214-dfd9-4b76-b9d1-e35ec626a44a",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "b0228786-0842-45ab-9528-dba05fdcd9a4"
+            "6da15ec6-e33e-475d-9700-267d7558ca81"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 252,
+          "duration": 241,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

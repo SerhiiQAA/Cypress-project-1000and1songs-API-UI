@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-08-20T09:44:59.639Z",
-    "end": "2024-08-20T09:44:59.791Z",
-    "duration": 152,
+    "start": "2024-10-05T11:35:33.937Z",
+    "end": "2024-10-05T11:35:34.180Z",
+    "duration": 243,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,17 +18,17 @@
   },
   "results": [
     {
-      "uuid": "7c84157d-e1b4-42c0-b749-c5949ce6dfcd",
+      "uuid": "86cd21e4-552d-4942-95c7-b43c21679236",
       "title": "",
-      "fullFile": "cypress/e2e/API/Education/Get Category.cy.js",
-      "file": "cypress/e2e/API/Education/Get Category.cy.js",
+      "fullFile": "cypress/e2e/API/Education/Get Song By Id.cy.js",
+      "file": "cypress/e2e/API/Education/Get Song By Id.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "a54d2996-dc93-44f5-bfcd-96883ff93b01",
-          "title": "Get Category",
+          "uuid": "900adf13-a4e0-45ce-91a4-8280564d94c1",
+          "title": "Get Song By Id",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,31 +36,31 @@
           "tests": [
             {
               "title": "Метод GET повинен повертати відповідь з обов'язковими полями",
-              "fullTitle": "Get Category Метод GET повинен повертати відповідь з обов'язковими полями",
+              "fullTitle": "Get Song By Id Метод GET повинен повертати відповідь з обов'язковими полями",
               "timedOut": null,
-              "duration": 115,
+              "duration": 208,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const songId = 2; // Ваш ID для пошуку\ncy.request({\n  method: 'GET',\n  url: `https://1000and1songs.com/api/v1/education/category/${songId}`\n  // Додайте інші параметри запиту, якщо потрібно\n}).then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n});",
+              "code": "const songId = 1; // Ваш ID для пошуку\ncy.request({\n  method: 'GET',\n  url: `https://1000and1songs.com/api/v1/education/genre/song/${songId}`\n}).then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  const expectedKeys = [\"id\", \"genres\", \"title\", \"stereo_audio\", \"song_text\", \"song_description\", \"location\", \"ethnographic_district\", \"collectors\", \"performers\", \"video_url\", \"comment_map\", \"map_photo\", \"photos\"];\n  // Перевірка наявності кожного ключа\n  expectedKeys.forEach(key => {\n    expect(response.body).to.have.property(key);\n  });\n});",
               "err": {},
-              "uuid": "f92b4f48-cbff-4dee-8157-03392e0ab5e8",
-              "parentUUID": "a54d2996-dc93-44f5-bfcd-96883ff93b01",
+              "uuid": "99c6a6aa-91a8-4ffc-8266-5c55c7eec98e",
+              "parentUUID": "900adf13-a4e0-45ce-91a4-8280564d94c1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f92b4f48-cbff-4dee-8157-03392e0ab5e8"
+            "99c6a6aa-91a8-4ffc-8266-5c55c7eec98e"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 115,
+          "duration": 208,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

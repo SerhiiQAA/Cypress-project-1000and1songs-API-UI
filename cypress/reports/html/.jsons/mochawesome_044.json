@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2024-08-20T09:48:18.095Z",
-    "end": "2024-08-20T09:48:24.600Z",
-    "duration": 6505,
+    "start": "2024-10-05T11:39:00.645Z",
+    "end": "2024-10-05T11:39:09.909Z",
+    "duration": 9264,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4f1ae5ce-71be-4a08-a0bf-346d69b59a4b",
+      "uuid": "91c0eea1-95bf-4842-a71a-0d203b023d6b",
       "title": "",
       "fullFile": "cypress/e2e/RegressionVisual/Pages/NewsPage.cy.js",
       "file": "cypress/e2e/RegressionVisual/Pages/NewsPage.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e73729cf-3f2c-44db-85cc-60fb6c407318",
+          "uuid": "e105bd63-1206-4439-b093-302bca327cb5",
           "title": "MainVisual",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "should be publicly accessible",
               "fullTitle": "MainVisual should be publicly accessible",
               "timedOut": null,
-              "duration": 6429,
+              "duration": 9189,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "Error: Image was 0.2674418604651163% different from saved snapshot with 4945 different pixels.\nSee diff for details: /home/user/Documents/QA_Automation_projects/Cypress_projects/1001_songs_project_Cypress/cypress/snapshots/RegressionVisual/Pages/NewsPage.cy.js/__diff_output__/MainVisual -- should be publicly accessible.diff.png\n    at Context.eval (webpack://1001_songs_cypress/./node_modules/@simonsmith/cypress-image-snapshot/command.js:68:0)",
                 "diff": null
               },
-              "uuid": "bddd211d-b110-41e1-8090-acb4f2c2c497",
-              "parentUUID": "e73729cf-3f2c-44db-85cc-60fb6c407318",
+              "uuid": "df88980a-9b22-4f04-9e37-23721d4ae8bb",
+              "parentUUID": "e105bd63-1206-4439-b093-302bca327cb5",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "bddd211d-b110-41e1-8090-acb4f2c2c497"
+            "df88980a-9b22-4f04-9e37-23721d4ae8bb"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 6429,
+          "duration": 9189,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

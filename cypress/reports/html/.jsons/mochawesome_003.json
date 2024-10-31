@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-08-20T09:42:47.784Z",
-    "end": "2024-08-20T09:42:47.964Z",
-    "duration": 180,
+    "start": "2024-10-05T11:33:23.560Z",
+    "end": "2024-10-05T11:33:23.839Z",
+    "duration": 279,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3e83ebad-6be0-45c9-9a9c-3c519a9c7edf",
+      "uuid": "70d0fb1d-01d0-46f3-b027-24580071ddd2",
       "title": "",
       "fullFile": "cypress/e2e/API/Get_Payment.cy.js",
       "file": "cypress/e2e/API/Get_Payment.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "fa5ae269-2113-4cf1-9c08-90ef15a72994",
+          "uuid": "506e7b02-41e4-4912-a114-7eecd52bc8d2",
           "title": "Get Payment",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "method get response code should be 200",
               "fullTitle": "Get Payment method get response code should be 200",
               "timedOut": null,
-              "duration": 147,
+              "duration": 241,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.request('https://1000and1songs.com/api/v1/payment').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  const expectedKeys = ['id', 'organization_name', 'edrpou', 'bank', 'info', 'iban', 'coffee_url', 'patreon_url', 'qr_code_url'];\n  // Checking the availability of each key\n  expectedKeys.forEach(key => {\n    expect(response.body).to.have.property(key);\n  });\n});",
               "err": {},
-              "uuid": "a03da91b-b969-4f58-92da-23b3df3674d8",
-              "parentUUID": "fa5ae269-2113-4cf1-9c08-90ef15a72994",
+              "uuid": "c80c0c44-cd21-45b8-b595-897156600fc0",
+              "parentUUID": "506e7b02-41e4-4912-a114-7eecd52bc8d2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a03da91b-b969-4f58-92da-23b3df3674d8"
+            "c80c0c44-cd21-45b8-b595-897156600fc0"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 147,
+          "duration": 241,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

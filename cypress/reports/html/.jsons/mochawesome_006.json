@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2024-08-20T09:43:08.697Z",
-    "end": "2024-08-20T09:43:25.391Z",
-    "duration": 16694,
+    "start": "2024-10-05T11:33:40.191Z",
+    "end": "2024-10-05T11:33:56.641Z",
+    "duration": 16450,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f9a8d612-b700-41fa-9b74-3b89bcbea8b1",
+      "uuid": "36544591-4ccc-4a23-b1dc-663dfbe6c19a",
       "title": "",
       "fullFile": "cypress/e2e/Front/Filter_modal_Map_page.cy.js",
       "file": "cypress/e2e/Front/Filter_modal_Map_page.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "bbfea25b-18f8-4f72-ae8f-00ed4a0d5998",
+          "uuid": "b3c5afd4-85dc-43a9-b696-c5cbb4ce74a8",
           "title": "Filter map",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Filter",
               "fullTitle": "Filter map Filter",
               "timedOut": null,
-              "duration": 7513,
+              "duration": 6731,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -47,12 +47,12 @@
               "context": null,
               "code": "cy.viewport(1280, 1020);\ncy.visit('/map');\n// cy.injectAxe();\n// cy.checkA11y();\nconst Filter = new _FilterModal.default();\nFilter.validateFilterBtn();\nFilter.validateFilterContainer();\nFilter.validateInputData();",
               "err": {
-                "message": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'HTMLDocument'\n    |     property '__e3_' -> object with constructor 'Object'\n    |     property 'keydown' -> object with constructor 'Object'\n    |     property '1' -> object with constructor '_.Ck'\n    --- property 'instance' closes the circle",
-                "estack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'HTMLDocument'\n    |     property '__e3_' -> object with constructor 'Object'\n    |     property 'keydown' -> object with constructor 'Object'\n    |     property '1' -> object with constructor '_.Ck'\n    --- property 'instance' closes the circle\n    at JSON.stringify (<anonymous>)\n    at eval (webpack://1001_songs_cypress/./node_modules/allure-cypress/dist/cjs/index.js:1:15033)\n    at $Cypress.eval (webpack://1001_songs_cypress/./node_modules/allure-cypress/dist/cjs/index.js:1:15033)",
+                "message": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'HTMLDocument'\n    |     property '__e3_' -> object with constructor 'Object'\n    |     property 'keydown' -> object with constructor 'Object'\n    |     property '1' -> object with constructor '_.bk'\n    --- property 'instance' closes the circle",
+                "estack": "TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'HTMLDocument'\n    |     property '__e3_' -> object with constructor 'Object'\n    |     property 'keydown' -> object with constructor 'Object'\n    |     property '1' -> object with constructor '_.bk'\n    --- property 'instance' closes the circle\n    at JSON.stringify (<anonymous>)\n    at eval (webpack://1001_songs_cypress/./node_modules/allure-cypress/dist/cjs/index.js:1:15033)\n    at $Cypress.eval (webpack://1001_songs_cypress/./node_modules/allure-cypress/dist/cjs/index.js:1:15033)",
                 "diff": null
               },
-              "uuid": "a0a14d66-2e95-42af-b6c1-dd61c5418b31",
-              "parentUUID": "bbfea25b-18f8-4f72-ae8f-00ed4a0d5998",
+              "uuid": "df919149-3b0a-472c-a711-cd0593078a97",
+              "parentUUID": "b3c5afd4-85dc-43a9-b696-c5cbb4ce74a8",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "a0a14d66-2e95-42af-b6c1-dd61c5418b31"
+            "df919149-3b0a-472c-a711-cd0593078a97"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 7513,
+          "duration": 6731,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

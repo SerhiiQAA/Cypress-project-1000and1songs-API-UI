@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-08-20T09:43:48.292Z",
-    "end": "2024-08-20T09:43:55.660Z",
-    "duration": 7368,
+    "start": "2024-10-05T11:34:21.885Z",
+    "end": "2024-10-05T11:34:30.379Z",
+    "duration": 8494,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d801f18f-17bd-4f2c-bde0-38502ea3d14a",
+      "uuid": "e8bd1301-ab83-4e7f-b6ab-425208af8f1d",
       "title": "",
       "fullFile": "cypress/e2e/Front/Main_page.cy.js",
       "file": "cypress/e2e/Front/Main_page.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "26312f8b-1078-43a5-8ed2-cee20e8664ce",
+          "uuid": "d30d7fbc-e402-44f7-b411-652edc23a981",
           "title": "Main page_Page object",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Main page validation",
               "fullTitle": "Main page_Page object Main page validation",
               "timedOut": null,
-              "duration": 5172,
+              "duration": 6405,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.viewport(1280, 1020);\ncy.visit('/');\n// cy.injectAxe();\n// cy.checkA11y();\nconst Main = new _MainPage.default();\nMain.validateHttps();\nMain.validateHeader();\nMain.validateFooter();\nMain.validateHomeContainer();\nMain.validateRunningString();\nMain.validateExpeditionBlock();\nMain.validateNewsBlock();",
               "err": {},
-              "uuid": "1b1baeb9-eb57-421f-b125-0f4b7b9a6098",
-              "parentUUID": "26312f8b-1078-43a5-8ed2-cee20e8664ce",
+              "uuid": "451e2db1-d011-4307-922d-bf79148a40b3",
+              "parentUUID": "d30d7fbc-e402-44f7-b411-652edc23a981",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1b1baeb9-eb57-421f-b125-0f4b7b9a6098"
+            "451e2db1-d011-4307-922d-bf79148a40b3"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5172,
+          "duration": 6405,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

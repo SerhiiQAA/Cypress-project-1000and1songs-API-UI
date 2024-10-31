@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2024-08-20T09:44:12.079Z",
-    "end": "2024-08-20T09:44:32.939Z",
-    "duration": 20860,
+    "start": "2024-10-05T11:34:46.019Z",
+    "end": "2024-10-05T11:35:07.574Z",
+    "duration": 21555,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5e60b7b7-088d-4fc1-96c0-b275db03506e",
+      "uuid": "06cbc35a-e328-43a9-9648-2b86f75071dc",
       "title": "",
       "fullFile": "cypress/e2e/Front/Search.cy.js",
       "file": "cypress/e2e/Front/Search.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "bd7f15e9-b75c-41bb-a39b-fa3811535a67",
+          "uuid": "1bf07b44-e35f-4071-af13-89d342c3b004",
           "title": "Search",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Valid_data",
               "fullTitle": "Search Valid_data",
               "timedOut": null,
-              "duration": 10805,
+              "duration": 13474,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.viewport(1280, 1020);\ncy.visit('/');\nconst Search = new _SearchF.default();\nSearch.validateSearchField();\nSearch.inputValidData();\nSearch.validateSearchValidData();\ncy.reload();",
               "err": {},
-              "uuid": "fe342ec0-242b-4cef-9e0f-b905b1895ca7",
-              "parentUUID": "bd7f15e9-b75c-41bb-a39b-fa3811535a67",
+              "uuid": "d48f34ec-49ab-401d-b924-c95aff3cdf4c",
+              "parentUUID": "1bf07b44-e35f-4071-af13-89d342c3b004",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Invalid_data",
               "fullTitle": "Search Invalid_data",
               "timedOut": null,
-              "duration": 7205,
+              "duration": 5249,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.viewport(1280, 1020);\ncy.visit('/');\nconst Search = new _SearchF.default();\nSearch.validateSearchField();\nSearch.inputInvalidData();\nSearch.validateSearchInvalidData();",
               "err": {},
-              "uuid": "f0fd08cb-f96f-4d4c-bc23-db95ab9b7cb7",
-              "parentUUID": "bd7f15e9-b75c-41bb-a39b-fa3811535a67",
+              "uuid": "dd0486e4-2868-4881-95bd-ac35886a9b32",
+              "parentUUID": "1bf07b44-e35f-4071-af13-89d342c3b004",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "fe342ec0-242b-4cef-9e0f-b905b1895ca7",
-            "f0fd08cb-f96f-4d4c-bc23-db95ab9b7cb7"
+            "d48f34ec-49ab-401d-b924-c95aff3cdf4c",
+            "dd0486e4-2868-4881-95bd-ac35886a9b32"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 18010,
+          "duration": 18723,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
