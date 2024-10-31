@@ -3,6 +3,7 @@ const { addMatchImageSnapshotPlugin } = require('@simonsmith/cypress-image-snaps
 const { allureCypress } = require("allure-cypress/reporter");
 
 module.exports = defineConfig({
+  projectId: "55coxs",
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     charts: true,
