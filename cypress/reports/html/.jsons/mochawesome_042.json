@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2024-10-05T11:38:13.667Z",
-    "end": "2024-10-05T11:38:23.633Z",
-    "duration": 9966,
+    "failures": 1,
+    "start": "2024-10-31T19:09:40.825Z",
+    "end": "2024-10-31T19:09:52.526Z",
+    "duration": 11701,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4763aafd-41aa-4c5a-aa4f-bb596908b6ea",
+      "uuid": "6550a154-4ed0-41a5-bf44-3a4f2891cdfc",
       "title": "",
       "fullFile": "cypress/e2e/RegressionVisual/Pages/MainPage.cy.js",
       "file": "cypress/e2e/RegressionVisual/Pages/MainPage.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6706c738-82ab-4f73-b816-6ac2505730bc",
+          "uuid": "a8a46ba7-8488-4315-813d-f18eb9a97e7f",
           "title": "MainVisual",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,33 @@
               "title": "should be publicly accessible",
               "fullTitle": "MainVisual should be publicly accessible",
               "timedOut": null,
-              "duration": 9884,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
+              "duration": 11557,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "cy.visit('/');\ncy.get('.map-container').scrollIntoView().wait(700).should('be.visible').then(() => {\n  cy.matchImageSnapshot({\n    failureThreshold: 0.05,\n    failureThresholdType: 'percent'\n  });\n});",
-              "err": {},
-              "uuid": "6a8921c7-9bed-484e-816c-3a856eae5ba3",
-              "parentUUID": "6706c738-82ab-4f73-b816-6ac2505730bc",
+              "err": {
+                "message": "Error: Image was 12.628481398658264% different from saved snapshot with 621195 different pixels.\nSee diff for details: /home/user/Documents/QA_Automation_projects/Cypress_projects/1001_songs_project_Cypress/cypress/snapshots/RegressionVisual/Pages/MainPage.cy.js/__diff_output__/MainVisual -- should be publicly accessible.diff.png",
+                "estack": "Error: Image was 12.628481398658264% different from saved snapshot with 621195 different pixels.\nSee diff for details: /home/user/Documents/QA_Automation_projects/Cypress_projects/1001_songs_project_Cypress/cypress/snapshots/RegressionVisual/Pages/MainPage.cy.js/__diff_output__/MainVisual -- should be publicly accessible.diff.png\n    at Context.eval (webpack://1001_songs_cypress/./node_modules/@simonsmith/cypress-image-snapshot/command.js:68:0)",
+                "diff": null
+              },
+              "uuid": "39ff426e-8582-4001-bb5c-552d1d4c158f",
+              "parentUUID": "a8a46ba7-8488-4315-813d-f18eb9a97e7f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "6a8921c7-9bed-484e-816c-3a856eae5ba3"
+          "passes": [],
+          "failures": [
+            "39ff426e-8582-4001-bb5c-552d1d4c158f"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 9884,
+          "duration": 11557,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

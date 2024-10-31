@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2024-10-05T11:35:47.391Z",
-    "end": "2024-10-05T11:35:47.685Z",
-    "duration": 294,
+    "failures": 0,
+    "start": "2024-10-31T19:03:47.854Z",
+    "end": "2024-10-31T19:03:48.073Z",
+    "duration": 219,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,17 +18,17 @@
   },
   "results": [
     {
-      "uuid": "68831133-79aa-4fb7-b45e-be2341762b10",
+      "uuid": "46df6e4b-8cad-402c-996a-77590858a105",
       "title": "",
-      "fullFile": "cypress/e2e/API/Map/Filter_Song_Geotags.cy.js",
-      "file": "cypress/e2e/API/Map/Filter_Song_Geotags.cy.js",
+      "fullFile": "cypress/e2e/API/Projects/Get All Projects.cy.js",
+      "file": "cypress/e2e/API/Projects/Get All Projects.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "a13ba214-dfd9-4b76-b9d1-e35ec626a44a",
-          "title": "Get Filter Song Geotags",
+          "uuid": "67f33303-afbb-40fc-9496-3132c31806e2",
+          "title": "Get All Projects",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,35 +36,31 @@
           "tests": [
             {
               "title": "method get response code should be  200",
-              "fullTitle": "Get Filter Song Geotags method get response code should be  200",
+              "fullTitle": "Get All Projects method get response code should be  200",
               "timedOut": null,
-              "duration": 241,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 143,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.request('https://1000and1songs.com/api/v1/map/filter/geotag').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  response.body.forEach(geotag => {\n    expect(geotag).to.have.all.keys('id', 'city', 'latitude', \"longitude\", \"song_count\");\n  });\n});",
-              "err": {
-                "message": "AssertionError: expected { Object (id, city, ...) } to have keys 'id', 'city', 'latitude', 'longitude', and 'song_count'",
-                "estack": "AssertionError: expected { Object (id, city, ...) } to have keys 'id', 'city', 'latitude', 'longitude', and 'song_count'\n    at eval (webpack://1001_songs_cypress/./cypress/e2e/API/Map/Filter_Song_Geotags.cy.js:7:39)\n    at Context.eval (webpack://1001_songs_cypress/./cypress/e2e/API/Map/Filter_Song_Geotags.cy.js:6:22)",
-                "diff": "- [ 'city', 'id', 'latitude', 'longitude', 'photo', 'song_count' ]\n+ [ 'city', 'id', 'latitude', 'longitude', 'song_count' ]\n"
-              },
-              "uuid": "6da15ec6-e33e-475d-9700-267d7558ca81",
-              "parentUUID": "a13ba214-dfd9-4b76-b9d1-e35ec626a44a",
+              "code": "cy.request('https://1000and1songs.com/api/v1/projects').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  expect(response.status).to.eq(200);\n  expect(response.body).to.have.property('items').that.is.a('array');\n  // expect(response.body.items).to.have.property('id').that.is.a('number');\n  // expect(response.body.items).to.have.property('title').that.is.a('string');\n  // expect(response.body.items).to.have.property('short_description').that.is.a('string');\n  // expect(response.body.items).to.have.property('preview_photo').that.is.a('string');\n  expect(response.body).to.have.property('total').that.is.a('number');\n  expect(response.body).to.have.property('page').that.is.a('number');\n  expect(response.body).to.have.property('size').that.is.a('number');\n  expect(response.body).to.have.property('pages').that.is.an('number');\n});",
+              "err": {},
+              "uuid": "aab9ae0d-4347-4f7e-8ff0-7072a86664d4",
+              "parentUUID": "67f33303-afbb-40fc-9496-3132c31806e2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "6da15ec6-e33e-475d-9700-267d7558ca81"
+          "passes": [
+            "aab9ae0d-4347-4f7e-8ff0-7072a86664d4"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 241,
+          "duration": 143,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

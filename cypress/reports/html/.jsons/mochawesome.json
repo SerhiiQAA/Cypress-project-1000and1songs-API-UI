@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-10-05T11:33:15.353Z",
-    "end": "2024-10-05T11:33:15.868Z",
-    "duration": 515,
+    "start": "2024-10-31T19:01:28.616Z",
+    "end": "2024-10-31T19:01:29.445Z",
+    "duration": 829,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,17 +18,17 @@
   },
   "results": [
     {
-      "uuid": "6c919f78-7824-499b-bdac-bf509ef80d68",
+      "uuid": "10fe598a-000b-40f5-bd7d-0f73b0776bc7",
       "title": "",
-      "fullFile": "cypress/e2e/API/Get_About.cy.js",
-      "file": "cypress/e2e/API/Get_About.cy.js",
+      "fullFile": "cypress/e2e/API/Dropdowns/Get_Cities.cy.js",
+      "file": "cypress/e2e/API/Dropdowns/Get_Cities.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "a020deb3-b7e9-4d49-8135-c3fa65b6b030",
-          "title": "Get About",
+          "uuid": "b06f4d71-6230-4d86-9a19-a38671402d18",
+          "title": "Get Cities",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,31 +36,31 @@
           "tests": [
             {
               "title": "method get response code should be  200",
-              "fullTitle": "Get About method get response code should be  200",
+              "fullTitle": "Get Cities method get response code should be  200",
               "timedOut": null,
-              "duration": 482,
+              "duration": 712,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.request('https://1000and1songs.com/api/v1/about').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  const expectedKeys = [\"id\", \"content\"];\n  // Перевірка наявності кожного ключа\n  expectedKeys.forEach(key => {\n    expect(response.body).to.have.property(key);\n  });\n});",
+              "code": "cy.request('/api/v1/filter/location/cities').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  response.body.forEach(partner => {\n    expect(partner).to.have.all.keys('id', \"name\", \"song_count\", \"country_id\", \"region_id\");\n  });\n});",
               "err": {},
-              "uuid": "44ba9be8-54ed-4778-8c7a-f4b63f4c94e4",
-              "parentUUID": "a020deb3-b7e9-4d49-8135-c3fa65b6b030",
+              "uuid": "60086af6-a51b-4728-bdee-4338c4f4449c",
+              "parentUUID": "b06f4d71-6230-4d86-9a19-a38671402d18",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "44ba9be8-54ed-4778-8c7a-f4b63f4c94e4"
+            "60086af6-a51b-4728-bdee-4338c4f4449c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 482,
+          "duration": 712,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

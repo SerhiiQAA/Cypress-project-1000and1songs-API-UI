@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2024-10-05T11:38:25.753Z",
-    "end": "2024-10-05T11:38:58.391Z",
-    "duration": 32638,
+    "failures": 1,
+    "start": "2024-10-31T19:10:04.783Z",
+    "end": "2024-10-31T19:10:28.922Z",
+    "duration": 24139,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "c52abcda-2463-4276-b029-e223e69f7f9e",
+      "uuid": "371fc5e3-3ed5-49ab-be28-ee75b4a9958a",
       "title": "",
       "fullFile": "cypress/e2e/RegressionVisual/Pages/MapPage.cy.js",
       "file": "cypress/e2e/RegressionVisual/Pages/MapPage.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "dd1f080b-9e01-420e-ac9e-82fa07c8a0ed",
+          "uuid": "71c81ade-2d50-48f2-af3c-ca487d9d8eff",
           "title": "MainVisual",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,33 @@
               "title": "should be publicly accessible",
               "fullTitle": "MainVisual should be publicly accessible",
               "timedOut": null,
-              "duration": 25509,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 11689,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "cy.visit('/map');\ncy.wait(500);\ncy.matchImageSnapshot({\n  failureThreshold: 0.05,\n  failureThresholdType: 'percent'\n});",
-              "err": {},
-              "uuid": "9ff9ee28-4f86-43f0-ae7d-aa67d07fd88d",
-              "parentUUID": "dd1f080b-9e01-420e-ac9e-82fa07c8a0ed",
+              "err": {
+                "message": "Error: Image was 21.000868357068427% different from saved snapshot with 604615 different pixels.\nSee diff for details: /home/user/Documents/QA_Automation_projects/Cypress_projects/1001_songs_project_Cypress/cypress/snapshots/RegressionVisual/Pages/MapPage.cy.js/__diff_output__/MainVisual -- should be publicly accessible.diff.png",
+                "estack": "Error: Image was 21.000868357068427% different from saved snapshot with 604615 different pixels.\nSee diff for details: /home/user/Documents/QA_Automation_projects/Cypress_projects/1001_songs_project_Cypress/cypress/snapshots/RegressionVisual/Pages/MapPage.cy.js/__diff_output__/MainVisual -- should be publicly accessible.diff.png\n    at Context.eval (webpack://1001_songs_cypress/./node_modules/@simonsmith/cypress-image-snapshot/command.js:68:0)",
+                "diff": null
+              },
+              "uuid": "5e441318-16a4-4eb0-9ccb-4109c993bbee",
+              "parentUUID": "71c81ade-2d50-48f2-af3c-ca487d9d8eff",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "9ff9ee28-4f86-43f0-ae7d-aa67d07fd88d"
+          "passes": [],
+          "failures": [
+            "5e441318-16a4-4eb0-9ccb-4109c993bbee"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 25509,
+          "duration": 11689,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

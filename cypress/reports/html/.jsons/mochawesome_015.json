@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-10-05T11:35:23.265Z",
-    "end": "2024-10-05T11:35:23.443Z",
-    "duration": 178,
+    "start": "2024-10-31T19:02:58.072Z",
+    "end": "2024-10-31T19:02:58.281Z",
+    "duration": 209,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,17 +18,17 @@
   },
   "results": [
     {
-      "uuid": "e0625970-9274-4d3c-b4a0-232caa557b92",
+      "uuid": "53584dc9-3695-492e-bb74-78d324ea13cd",
       "title": "",
-      "fullFile": "cypress/e2e/API/Dropdowns/Get_Regions.cy.js",
-      "file": "cypress/e2e/API/Dropdowns/Get_Regions.cy.js",
+      "fullFile": "cypress/e2e/API/Get_Partners.cy.js",
+      "file": "cypress/e2e/API/Get_Partners.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "59c47903-967b-4c21-9a0f-deb4f0b5613c",
-          "title": "Get Regions",
+          "uuid": "e81a4053-50ac-4df0-badc-e3cbece967e1",
+          "title": "Get Partners",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,31 +36,31 @@
           "tests": [
             {
               "title": "method get response code should be  200",
-              "fullTitle": "Get Regions method get response code should be  200",
+              "fullTitle": "Get Partners method get response code should be  200",
               "timedOut": null,
-              "duration": 144,
+              "duration": 151,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.request('https://1000and1songs.com/api/v1/filter/location/regions').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  response.body.forEach(partner => {\n    expect(partner).to.have.all.keys('id', \"name\", \"song_count\", \"country_id\");\n  });\n});",
+              "code": "cy.request('https://1000and1songs.com/api/v1/partners').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  response.body.forEach(partner => {\n    expect(partner).to.have.all.keys('id', 'link', 'photo');\n  });\n  // expect(response.body).to.have.length(3);\n});",
               "err": {},
-              "uuid": "ada84392-f9c2-4376-8a6f-10e2ebdee9e4",
-              "parentUUID": "59c47903-967b-4c21-9a0f-deb4f0b5613c",
+              "uuid": "4e7e3583-211f-40c4-aedb-64caee77db42",
+              "parentUUID": "e81a4053-50ac-4df0-badc-e3cbece967e1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ada84392-f9c2-4376-8a6f-10e2ebdee9e4"
+            "4e7e3583-211f-40c4-aedb-64caee77db42"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 144,
+          "duration": 151,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

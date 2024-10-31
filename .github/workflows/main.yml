@@ -10,3 +10,32 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
+
+
+
+
+
+
+
+# name: Manual Test Run
+
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       test-suite:
+#         description: 'Test suite to run'
+#         required: true
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
+
+#       - name: Install dependencies
+#         run: npm install
+
+#       - name: Run Cypress tests
+#         run: npx cypress run --spec ${{ github.event.inputs.test-suite }}

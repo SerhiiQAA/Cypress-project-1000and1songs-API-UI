@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-10-05T11:35:17.967Z",
-    "end": "2024-10-05T11:35:18.146Z",
-    "duration": 179,
+    "start": "2024-10-31T19:02:47.500Z",
+    "end": "2024-10-31T19:02:47.746Z",
+    "duration": 246,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,17 +18,17 @@
   },
   "results": [
     {
-      "uuid": "4b9a1e69-abac-430c-8f3a-8e6cf27db99d",
+      "uuid": "1234f4c5-f551-44c6-a955-8a6762cdec8d",
       "title": "",
-      "fullFile": "cypress/e2e/API/Dropdowns/Get_Funds.cy.js",
-      "file": "cypress/e2e/API/Dropdowns/Get_Funds.cy.js",
+      "fullFile": "cypress/e2e/API/Get_About.cy.js",
+      "file": "cypress/e2e/API/Get_About.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "764ec042-6b65-4350-be7e-7df46b2f606c",
-          "title": "Get Funds",
+          "uuid": "2988c0e1-6512-4358-8a73-4ff816b81412",
+          "title": "Get About",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,31 +36,31 @@
           "tests": [
             {
               "title": "method get response code should be  200",
-              "fullTitle": "Get Funds method get response code should be  200",
+              "fullTitle": "Get About method get response code should be  200",
               "timedOut": null,
-              "duration": 146,
+              "duration": 181,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.request('https://1000and1songs.com/api/v1/filter/song/funds').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  response.body.forEach(funds => {\n    expect(funds).to.have.all.keys('id', \"name\", \"song_count\");\n  });\n});",
+              "code": "cy.request('https://1000and1songs.com/api/v1/about').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  const expectedKeys = [\"id\", \"content\"];\n  // Перевірка наявності кожного ключа\n  expectedKeys.forEach(key => {\n    expect(response.body).to.have.property(key);\n  });\n});",
               "err": {},
-              "uuid": "5751cc21-9fe4-433d-9528-e680e4091e8b",
-              "parentUUID": "764ec042-6b65-4350-be7e-7df46b2f606c",
+              "uuid": "8bd10630-d1b9-4274-98b6-8cb2f833ecb8",
+              "parentUUID": "2988c0e1-6512-4358-8a73-4ff816b81412",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5751cc21-9fe4-433d-9528-e680e4091e8b"
+            "8bd10630-d1b9-4274-98b6-8cb2f833ecb8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 146,
+          "duration": 181,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

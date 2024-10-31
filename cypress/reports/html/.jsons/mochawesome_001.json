@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-10-05T11:33:18.160Z",
-    "end": "2024-10-05T11:33:18.346Z",
-    "duration": 186,
+    "start": "2024-10-31T19:01:35.598Z",
+    "end": "2024-10-31T19:01:35.897Z",
+    "duration": 299,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,17 +18,17 @@
   },
   "results": [
     {
-      "uuid": "a28eeb48-83d3-46ca-b3d0-a4980efaf4e8",
+      "uuid": "44e82f2a-0a17-4228-920c-0829c89f464d",
       "title": "",
-      "fullFile": "cypress/e2e/API/Get_Footer.cy.js",
-      "file": "cypress/e2e/API/Get_Footer.cy.js",
+      "fullFile": "cypress/e2e/API/Dropdowns/Get_Countries.cy.js",
+      "file": "cypress/e2e/API/Dropdowns/Get_Countries.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "5050a57c-0a1a-46b3-bcd7-b19aef27a493",
-          "title": "Get Footer",
+          "uuid": "879de65f-8a9b-4936-81f2-14d7e2827eed",
+          "title": "Get Countries",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,31 +36,31 @@
           "tests": [
             {
               "title": "method get response code should be  200",
-              "fullTitle": "Get Footer method get response code should be  200",
+              "fullTitle": "Get Countries method get response code should be  200",
               "timedOut": null,
-              "duration": 153,
+              "duration": 238,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.request('https://1000and1songs.com/api/v1/footer').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  expect(response.body).to.have.property('reporting');\n  const expectedKeys = ['reporting', 'privacy_policy', 'rules_and_terms', 'email', 'facebook_url', 'youtube_url'];\n  // Перевірка наявності кожного ключа\n  expectedKeys.forEach(key => {\n    expect(response.body).to.have.property(key);\n  });\n});",
+              "code": "cy.request('https://1000and1songs.com/api/v1/filter/location/countries').then(response => {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be.null;\n  response.body.forEach(partner => {\n    expect(partner).to.have.all.keys('id', \"name\", \"song_count\");\n  });\n});",
               "err": {},
-              "uuid": "55cde5de-be54-4b47-a4b2-59f8a0602e12",
-              "parentUUID": "5050a57c-0a1a-46b3-bcd7-b19aef27a493",
+              "uuid": "3deab368-7070-4099-8e17-b1cc7547a627",
+              "parentUUID": "879de65f-8a9b-4936-81f2-14d7e2827eed",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "55cde5de-be54-4b47-a4b2-59f8a0602e12"
+            "3deab368-7070-4099-8e17-b1cc7547a627"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 153,
+          "duration": 238,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
