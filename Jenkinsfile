@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+
+    tools {
+        nodejs 'Node' // Ім'я NodeJS установки, яке ви налаштували у Jenkins
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'master', url: 'https://github.com/SerhiiQAA/1001_Songs_project_Cypress.git'
+            }
+        }
+
+        stage('Install Cypress') {
+            steps {
+                sh 'npm install'
+                sh 'npx cypress install'
+            }
+        }
+
+        stage('Run Cypress Tests') {
+            steps {
+                sh 'npx cypress run'
+            }
+        }
+    }
+
+    post {
+        always {
+            cleanWs()
+        }
+    }
+}
