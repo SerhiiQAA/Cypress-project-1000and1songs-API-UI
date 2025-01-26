@@ -17,6 +17,7 @@
     "@faker-js/faker": "^8.4.1",
     "@pixeleye/cypress": "^0.6.5",
     "@simonsmith/cypress-image-snapshot": "^9.1.0",
+    "ajv": "^8.17.1",
     "allure-cypress": "^3.0.0-beta.7",
     "cypress-mochawesome-reporter": "^3.8.2",
     "pixeleye": "^0.8.7"

@@ -1,4 +1,4 @@
-describe('Get Category', () => {
+describe('Get Genre', () => {
     it('Метод GET повинен повертати відповідь з обов\'язковими полями', () => {
       const songId = 12; // Ваш ID для пошуку
   
